@@ -4,12 +4,15 @@
 @tailwind utilities;
 @layer components{
     .btn-primary{
-        @apply bg-blue-800 h-14 md:h-10 p-1 text-white
+        @apply bg-blue-800 h-20 md:h-10 p-1 text-white
         mt-2 text-2xl text-center
     }
     .btn_second{
         @apply bg-blue-400 h-10 p-1 text-white rounded-xl
         hover:bg-blue-200 
+    }
+    .focus_ring{
+        @apply focus:ring-2 focus:ring-blue-600
     }
 }
 .container{

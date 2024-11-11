@@ -12,6 +12,7 @@ import Immobilier from "./component/Immobilier.jsx"
 import Count from './component/Count.jsx'
 import Login from './component/Login.jsx'
 import Register from './component/Register.jsx'
+import Profile from './component/Profile.jsx'
 const Layout =() =>{
  return(
   <div className="layout">
@@ -56,6 +57,10 @@ const router=createBrowserRouter([
        {
         path:"/register",
         element:<Register/>
+      },
+      {
+        path:"/profile",
+        element:<Profile/>
       },
     ]
 

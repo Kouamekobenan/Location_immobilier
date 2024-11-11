@@ -16,11 +16,11 @@ const Register = () => {
         </div>
         <div className="bg flex flex-col gap-4 p-4">
           <input type="text" placeholder="✔ entrez votre nom " 
-          className="md:w-96 h-11 pl-3"/>
+          className="md:w-96 h-11 pl-3 focus_ring"/>
           <input type="mail" placeholder="✉ entrez email "
-          className="md:w-96 h-11 pl-3"/>
+          className="md:w-96 h-11 pl-3 focus_ring"/>
           <input type="password" placeholder="🧷entrez votre mot de passe "
-          className="md:w-96 h-11 pl-3"/>
+          className="md:w-96 h-11 pl-3 focus_ring"/>
            <button className="btn-primary">Valider</button>
            <aside className="flex flex-col gap-6 justify-center">
             <small className="text-2xl/4 md:text-2xl/3 font-thin"> Avez-vous un compte ? si oui:</small>

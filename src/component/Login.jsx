@@ -15,10 +15,10 @@ const Login = () => {
               Login</section>
         </div>
         <div className="bg flex flex-col gap-4 p-4">
-          <input type="mail" placeholder="✉ entrez votre email "
-          className="md:w-96 h-11 pl-3"/>
+          <input type="mail" placeholder="✉ entrez votre email"
+          className="md:w-96 h-11 pl-3 focus_ring"/>
           <input type="password" placeholder="🧷entrez votre mot de passe "
-          className="md:w-96 h-11 pl-3"/>
+          className="md:w-96 h-11 pl-3 focus_ring"/>
            <button className="btn-primary">connectez-vous</button>
            <aside className="flex flex-col gap-6 justify-center">
             <small className="text-2xl/4 md:text-2xl/3 font-thin"> Avez-vous un compte ? si non:</small>

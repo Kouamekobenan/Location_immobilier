@@ -8,6 +8,8 @@ import resid2 from "../images/resid2.jpeg";
 import resid3 from "../images/m1.jpeg";
 import m2 from "../images/m2.jpeg";
 import m3 from "../images/m3.jpeg";
+import profile from '../images/profile (1).jpg'
+
 import pagination from "../component/Pagination"
 class immobilier extends Component {
   
@@ -154,7 +156,7 @@ class immobilier extends Component {
             className="blog_cat flex flex-col gap-4 md:flex md:flex-row md:gap-4
                             pt-4 md:justify-center"
           >
-            <div className="appartement bg-slate-400 rounded-lg p-4 ">
+            <div className="appartement bg-slate-400 rounded-lg p-4 duration-500 hover:outline-dotted">
               <div className="imgs">
                 <img
                   src={appart2}
@@ -162,7 +164,7 @@ class immobilier extends Component {
                   className="w-full h-60"
                 />
               </div>
-              <div className="coodr flex flex-col justify-center text-center">
+              <div className="coodr flex flex-col justify-center text-center ">
                 <span>
                   <h2 className="uppercase text-2xl font-bold text-center text-blue-800">
                     Appartement
@@ -173,7 +175,7 @@ class immobilier extends Component {
                 </button>
               </div>
             </div>
-            <div className="residence bg-slate-400 rounded-lg p-4 ">
+            <div className="residence bg-slate-400 rounded-lg p-4 duration-500 hover:outline-dotted">
               <div className="imgs">
                 <img
                   src={residence}
@@ -194,7 +196,7 @@ class immobilier extends Component {
             </div>
             <div
               className="chambre 
-                        bg-slate-400 rounded-lg p-4 "
+                        bg-slate-400 rounded-lg p-4 duration-500 hover:outline-dotted"
             >
               <div className="imgs">
                 <img
@@ -234,10 +236,11 @@ class immobilier extends Component {
           </div>
           <div
             className="content_blog mt-4 flex flex-col
-                        gap-4 md:grid md:grid-cols-3"
+                        gap-4 md:grid md:grid-cols-3 "
           >
             {data.map((todo) => (
-              <div className="p-4 bg-slate-100 rounded-lg">
+              <div className="p-4 bg-slate-100 rounded-lg 
+               duration-700 hover:shadow-lg">
                 <div className="im">
                   <div className="w-full">
                     <img src={todo.img} alt="" className="w-full h-60" />
@@ -258,11 +261,22 @@ class immobilier extends Component {
                   <div className="btn flex flex-col justify-center">
                     <button
                       className="bg-blue-100 hover:bg-slate-300 h-14 md:h-10 p-1 text-gray-700
-                                                    mt-2 text-2xl text-center font-serif font-bold
-                                                        transform motion-safe:hover:scale-110 duration-500"
+                                                    mt-2 text-xl md:text-2xl text-center font-serif font-bold
+                                                        transform motion-safe:hover:scale-10 duration-500"
                     >
                       commander le meuble
                     </button>
+
+                  </div>
+                  <div className="profile flex gap-3 mt-4">
+                    <article>
+                      <img src={profile} alt="photo de profile" 
+                      className="rounded-full w-20 h-20 border-x-4 border-blue-500 "/>
+                    </article>
+                    <article className="flex flex-col gap-3 justify-center">
+                      <span className="uppercase md:text-xl font-serif">zana albert</span>
+                      <span className="md:text-xl font-serif">Il y'a 2heure</span>
+                    </article>
                   </div>
                 </div>
               </div>

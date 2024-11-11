@@ -6,7 +6,8 @@ const Header = () => {
   return (
     <div className="container bg-slate-300 p-1 w-full fixed z-10">
       <div className="content flex justify-around">
-        <div className="icon pt-3 md:hidden cursor-pointer" onClick={() => setOpen(!open)}>{open ? <FiAlignJustify /> : "❌"}         
+        <div className="icon pt-3 md:hidden 
+        cursor-pointer" onClick={() => setOpen(!open)}> {open ? <FiAlignJustify /> : "❌"}         
         </div>
         <div className="logo">
           <div className="image grid-cols-1 gap-1 ">

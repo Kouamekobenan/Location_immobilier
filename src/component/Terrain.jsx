@@ -5,6 +5,7 @@ import t3 from "../images/t3.jpeg"
 import t4 from "../images/t4.jpeg"
 import t5 from "../images/t5.jpeg"
 import t6 from "../images/t6.jpeg"
+import profile from '../images/profile (1).jpg'
 
 export class Terrain extends Component {
   render() {
@@ -109,6 +110,16 @@ export class Terrain extends Component {
                     >
                       Acheter un terrain
                     </button>
+                  </div>
+                  <div className="profile flex gap-3 mt-4">
+                    <article>
+                      <img src={profile} alt="photo de profile" 
+                      className="rounded-full w-20 h-20 border-x-4 border-blue-500"/>
+                    </article>
+                    <article className="flex flex-col gap-3 justify-center">
+                      <span className="uppercase md:text-xl font-serif">zana albert</span>
+                      <span className=" md:text-xl font-serif">Il y'a 2heure</span>
+                    </article>
                   </div>
                 </div>
                 ))}
